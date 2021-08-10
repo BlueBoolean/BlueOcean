@@ -3,7 +3,7 @@ Nexdoor is a hyperlocal neighborhood assistance social networking platform. Ask 
 
 # Installation Instructions
 1. Fork repo & clone down
-2. Create a new Amazon RDS Instance using easy setup
+2. Create a new Amazon RDS Instance using easy setup. Make sure to adjust the security settings to allow access from your client. This probably means setting "publicly accessible" to true under settings.
 3. In your root project directory, run `npm install`
 4. change `.env example` file name to `.env`
 5. Inside your newly-renamed `.env` file, 
