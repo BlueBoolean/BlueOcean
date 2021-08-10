@@ -13,5 +13,5 @@ Nexdoor is a hyperlocal neighborhood assistance social networking platform. Ask 
 6. In a bash terminal, boot up your Redis database. This varies by OS, but `sudo service redis-server start` should work on most OSes.
 7. In a bash terminal, run `npm  run server`
 8. In a SECOND bash terminal, run `npm run start`. If that doesn't work, try running the following commands:
-  * `npm run build-dev`
+  * `npm run build-dev` or `npm run build-prod`
   * `npm run start`
