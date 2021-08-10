@@ -15,3 +15,6 @@ Nexdoor is a hyperlocal neighborhood assistance social networking platform. Ask 
 8. In a SECOND bash terminal, run `npm run start`. If that doesn't work, try running the following commands:
   * `npm run build-dev` or `npm run build-prod`
   * `npm run start`
+9. Open your browser to `http://localhost:8080` (or whatever you set your default client port to)
+10. Create a new account
+11. Meet your neighbors!
