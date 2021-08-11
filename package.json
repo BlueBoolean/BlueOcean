@@ -69,11 +69,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
     "@hot-loader/react-dom": "^17.0.1",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
+    "core-js": "^3.16.1",
     "css-loader": "^5.2.7",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -84,9 +86,19 @@
     "file-loader": "^6.2.0",
     "jest": "^27.0.6",
     "react-hot-loader": "^4.13.0",
+    "regenerator-runtime": "^0.13.9",
     "style-loader": "^3.1.0",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "snapshotSerializers": [],
+    "collectCoverageFrom": [],
+    "collectReporters": [],
+    "coverageThreshold": {},
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttg|woff|woff2$": "identity-obj-proxy"
+    }
   }
 }
