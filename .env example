@@ -17,3 +17,7 @@ CLIENT_PORT=8080
 # Configuration for Redis server (storage for sessions)
 REDIS_PORT=6379
 REDIS_HOST=localhost
+
+# Configuration for Twilio verifiction service
+TWILIO_ACCOUNT_SID=FILL_ME_IN
+TWILIO_AUTH_TOKEN=FILL_ME_IN

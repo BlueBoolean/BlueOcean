@@ -27,11 +27,13 @@ const App = () => {
 
   useEffect(() => {
     getTasksByLocation();
-    const interval = setInterval(() => getTasksByLocation(), 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  });
+    if (currentInterval) {
+      clearInterval(currentInterval);
+    }
+
+    const getTimer = setInterval(getTasksByLocation, 10000);
+    setCurrentInterval(getTimer);
+  }, [userId]);
 
   return (
     <div>
