@@ -10,7 +10,6 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 const twilioClient = require('twilio')(accountSid, authToken);
-// const db = require('../controllers/userCtrl');
 
 verifyuser.get('/:user_id/:phonenumber', (req, res) => {
   twilioClient.verify.services('VA66ca30bad6e29e0171566edb2eb67294')
