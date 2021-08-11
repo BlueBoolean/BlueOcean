@@ -46,7 +46,7 @@ const App = () => {
       clearInterval(currentInterval);
     }
 
-    const getTimer = setInterval(getTasksByLocation, 100);
+    const getTimer = setInterval(getTasksByLocation, 10000);
     setCurrentInterval(getTimer);
   }, [userId]);
 

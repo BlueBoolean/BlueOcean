@@ -59,9 +59,11 @@ router
 // import individual routes
 const login = require('./routes/login');
 const newuser = require('./routes/newuser');
+// VERIFY USER ----------------------------------------------------
+  const verifyuser = require('./routes/verifyuser');
 
 // route each endpoint
 router.use('/login', login);
 router.use('/newuser', newuser);
-
+router.use('/verifyuser', verifyuser);
 module.exports = router;

@@ -38,11 +38,8 @@ export default function PrivateRoute({ children, ...rest }) {
       <Route
         {...rest}
         render={({ location }) =>
-        (userData.user_id !== 0) ? (
-          children
-          ) : (
-            <Redirect to='/login' />
-          )
+        (userData.user_id !== 0) ? (children) : 
+        (<Redirect to='/login' />)
         }
       />
     ) : (

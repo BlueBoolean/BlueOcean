@@ -1655,6 +1655,7 @@ const taskControllers = {
         res.status(200).send(data.rows[0]);
       })
       .catch((err) => {
+        console.log(err.stack);
         res.status(400).send(err.stack);
       });
   },

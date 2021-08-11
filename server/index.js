@@ -13,9 +13,10 @@ require('dotenv').config();
 const redis = require('redis');
 const connectRedis = require('connect-redis');
 
+const twilio = require('twilio');
+
 const app = express();
 const port = 3500;
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -51,7 +52,7 @@ app.listen(port, () => {
 app.use(express.static(path.join(__dirname, '..', 'client/index')));
 
 io.on('connection', (socket) => {
-  console.log('user connected');
+  console.log('user connected to socket.io for messaging');
   // socket.on('join', (room) => {
   //   socket.join(room);
   // });
@@ -61,3 +62,4 @@ io.on('connection', (socket) => {
     // socket.to('room1').emit(message);
   });
 });
+
