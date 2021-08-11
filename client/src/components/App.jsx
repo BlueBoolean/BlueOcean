@@ -34,24 +34,26 @@ const App = () => {
   });
 
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/login" component={LogIn} />
-        <PrivateRoute exact path="/helpfulfeed">
-          <HelpfulFeed />
-        </PrivateRoute>
-        <PrivateRoute exact path="/active">
-          <Active />
-        </PrivateRoute>
-        <PrivateRoute exact path="/myactiverequest">
-          <MyActiveRequest />
-        </PrivateRoute>
-        <PrivateRoute path="/">
-          <Home />
-        </PrivateRoute>
-      </Switch>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/login" component={LogIn} />
+          <PrivateRoute exact path="/helpfulfeed">
+            <HelpfulFeed />
+          </PrivateRoute>
+          <PrivateRoute exact path="/active">
+            <Active />
+          </PrivateRoute>
+          <PrivateRoute exact path="/myactiverequest">
+            <MyActiveRequest />
+          </PrivateRoute>
+          <PrivateRoute path="/">
+            <Home />
+          </PrivateRoute>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 };
 
